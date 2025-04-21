@@ -1,0 +1,19 @@
+/* Base transition */
+.navbar {
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+  
+  /* Al hacer scroll (modo claro) */
+  .scrolled {
+    background-color: #5b7ce1 !important; /* Azul profundo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Al hacer scroll (modo oscuro) */
+  [data-theme='dark'] .scrolled {
+    background-color: rgba(15, 23, 42, 0.85) !important; /* Azul oscuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3) !important;
+  }
+  
