@@ -9,3 +9,52 @@
   height: 200px;
   width: 200px;
 }
+
+.features {
+  padding: 20px;
+  background-color: var(--ifm-background-color);
+}
+
+.card {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.iconWrapper {
+  background-color: rgba(59, 130, 246, 0.1); /* azul suave */
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--ifm-color-primary);
+}
+
+.title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-heading-color);
+}
+
+.description {
+  font-size: 1rem;
+  color: var(--ifm-font-color-base);
+}
+

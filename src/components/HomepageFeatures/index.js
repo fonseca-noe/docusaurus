@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: '🔍 ¿Qué es el inspector?',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/card01.svg').default,
     description: (
       <>
         Es una herramienta del navegador que te permite analizar y modificar el
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: '💡 ¿Para qué sirve?',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/card02.svg').default,
     description: (
       <>
         Ideal para desarrolladores, permite inspeccionar elementos,
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: '🧭 ¿Cómo lo abro?',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/card03.svg').default,
     description: (
       <>
         Haz clic derecho en una página y elige <strong>"Inspeccionar"</strong> o
@@ -37,14 +37,12 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+    <div className={clsx('col col--4', styles.card)}>
+      <div className={styles.iconWrapper}>
+        <Svg className={styles.icon} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+      <Heading as="h3" className={styles.title}>{title}</Heading>
+      <p className={styles.description}>{description}</p>
     </div>
   );
 }

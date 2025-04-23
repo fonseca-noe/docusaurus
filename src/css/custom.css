@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: 'Inter', sans-serif;
+  --ifm-font-family-base: "Inter", sans-serif;
 
   /* 🎨 Colores primarios personalizados */
   --ifm-color-primary: #1e40af;
@@ -18,15 +18,20 @@
   --ifm-color-primary-lightest: #5b7ce1;
 
   /* 📖 Tipografía */
-  --ifm-heading-font-family: 'Inter', sans-serif;
+  --ifm-heading-font-family: "Inter", sans-serif;
 
   /* 📏 Código */
   --ifm-code-font-size: 90%;
-  --docusaurus-highlighted-code-line-bg: rgba(30, 64, 175, 0.1); /* Azul suave */
+  --docusaurus-highlighted-code-line-bg: rgba(
+    30,
+    64,
+    175,
+    0.1
+  ); /* Azul suave */
 }
 
 /* 🌙 Modo oscuro */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #60a5fa;
   --ifm-color-primary-dark: #4f94f5;
   --ifm-color-primary-darker: #3f83ef;
@@ -47,6 +52,28 @@
 
 .navbar {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    90deg,
+    #172554 0%,   /* Azul oscuro, casi marino */
+    #1e40af 40%,  /* Azul primario */
+    #3b82f6 100%  /* Azul claro vibrante */
+  );
+}
+
+[data-theme="dark"] .navbar {
+  background: linear-gradient(
+    90deg,
+    #0f172a 0%,
+    #1e3a8a 40%,
+    #2563eb 100%
+  );
+}
+
+.navbar__link {
+  color: #fff !important;
+}
+.navbar__title {
+  color: #fff !important;
 }
 
 .footer {
@@ -61,4 +88,50 @@
 .footer a:hover {
   color: white;
 }
+
+.button {
+  background: linear-gradient(
+    135deg,
+    #1e40af 0%,
+    #3b82f6 100%
+  );
+  color: white;
+  border: white solid 1px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: linear-gradient(
+    135deg,
+    #1a3799 0%,
+    #2563eb 100%
+  );
+  transform: scale(1.03);
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); /* azul claro translúcido */
+}
+
+[data-theme="dark"] .button {
+  background: linear-gradient(
+    135deg,
+    #1e3a8a 0%,
+    #60a5fa 100%
+  );
+}
+
+[data-theme="dark"] .button:hover {
+  background: linear-gradient(
+    135deg,
+    #1c347a 0%,
+    #3b82f6 100%
+  );
+}
+
 

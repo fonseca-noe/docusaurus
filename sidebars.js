@@ -21,7 +21,7 @@ const sidebars = {
       id: 'intro',
       label: 'Inicio',
       customProps: {
-        icon: 'fa:FaHome', // Ícono para "Inicio"
+        icon: 'fa:FaHome', 
       },
     },
     {
@@ -30,7 +30,7 @@ const sidebars = {
       link: {
         type: 'generated-index',
           description: '5 minutos para aprender los conceptos más importantes del inspector',
-          slug: '/herramientas-dev', // Opcional: la ruta personalizada
+          slug: '/herramientas-dev', 
       },
       customProps: {
         icon: 'fa:FaFolderOpen',
@@ -39,73 +39,73 @@ const sidebars = {
         {
           type: 'doc',
           id: 'inspector/elementos',
-          label: 'Elementos',
+          label: 'Interfaz de Elementos',
           customProps: {
-            icon: 'fa:FaCode', // Código: HTML, DOM
+            icon: 'fa:FaCode', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/consola',
-          label: 'Consola',
+          label: 'Interfaz de Consola',
           customProps: {
-            icon: 'bs:BsFillTerminalFill', // Terminal = consola
+            icon: 'bs:BsFillTerminalFill', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/fuentes',
-          label: 'Fuentes',
+          label: 'Interfaz de Fuentes',
           customProps: {
-            icon: 'fa:FaFont', // Letra = fuentes
+            icon: 'fa:FaFont', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/red',
-          label: 'Red',
+          label: 'Interfaz de Red',
           customProps: {
-            icon: 'fa:FaNetworkWired', // Cable de red
+            icon: 'fa:FaNetworkWired', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/rendimiento',
-          label: 'Rendimiento',
+          label: 'Interfaz de Rendimiento',
           customProps: {
-            icon: 'fa:FaTachometerAlt', // Velocímetro
+            icon: 'fa:FaTachometerAlt', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/memoria',
-          label: 'Memoria',
+          label: 'Interfaz de Memoria',
           customProps: {
-            icon: 'fa:FaMicrochip', // Memoria / chip
+            icon: 'fa:FaMicrochip', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/aplicacion',
-          label: 'Aplicación',
+          label: 'Interfaz de Aplicación',
           customProps: {
-            icon: 'fa:FaCubes', // Aplicaciones o módulos
+            icon: 'fa:FaCubes', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/lightHouse',
-          label: 'Light House',
+          label: 'Interfaz de Light House',
           customProps: {
-            icon: 'fa:FaLightbulb', // Farol o idea
+            icon: 'fa:FaLightbulb', 
           },
         },
         {
           type: 'doc',
           id: 'inspector/grabadora',
-          label: 'Grabadora',
+          label: 'Interfaz Grabadora',
           customProps: {
-            icon: 'fa:FaVideo', // Cámara de grabación
+            icon: 'fa:FaVideo', 
           },
         }
       ],

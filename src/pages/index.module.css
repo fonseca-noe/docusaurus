@@ -21,3 +21,52 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.hero {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  padding: 5rem 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.hero h1 span {
+  color: var(--ifm-color-primary-lightest);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.buttons a {
+  margin-right: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.cta {
+  background-color: #0ea5e9;
+  color: white;
+  text-decoration: none;
+}
+
+.heroImage {
+  max-width: 400px;
+}
