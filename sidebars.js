@@ -26,101 +26,88 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Tutorial Básico',
-      customProps: {
-        icon: 'fa:FaBook', // Ícono para categoría "Tutorial Básico"
+      label: 'DevTools',
+      link: {
+        type: 'generated-index',
+          description: '5 minutos para aprender los conceptos más importantes del inspector',
+          slug: '/herramientas-dev', // Opcional: la ruta personalizada
       },
-      items: [
-        {
-          type: 'doc',
-          id: 'tutorial-basics/create-a-blog-post',
-          label: 'Create a Blog Post',
-          customProps: {
-            icon: 'fa:FaBlog',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-basics/create-a-document',
-          label: 'Create a Document',
-          customProps: {
-            icon: 'fa:FaFileAlt',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-basics/create-a-page',
-          label: 'Create a Page',
-          customProps: {
-            icon: 'fa:FaFileAlt',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-basics/deploy-your-site',
-          label: 'Deploy your Site',
-          customProps: {
-            icon: 'fa:FaRocket',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-basics/markdown-features',
-          label: 'Markdown Features',
-          customProps: {
-            icon: 'fa:FaFileAlt',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-basics/congratulations',
-          label: 'Congratulations',
-          customProps: {
-            icon: 'fa:FaSmile',
-          },
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'Extras',
-      customProps: {
-        icon: 'fa:FaTools', // Ícono para categoría "Extras"
-      },
-      items: [
-        {
-          type: 'doc',
-          id: 'tutorial-extras/manage-docs-versions',
-          label: 'Manage Docs Versions',
-          customProps: {
-            icon: 'fa:FaCogs',
-          },
-        },
-        {
-          type: 'doc',
-          id: 'tutorial-extras/translate-your-site',
-          label: 'Translate your Site',
-          customProps: {
-            icon: 'fa:FaLanguage',
-          },
-        },
-      ],
-    },
-    {
-      type: 'category',
-      label: 'prueba',
       customProps: {
         icon: 'fa:FaFolderOpen',
       },
       items: [
         {
           type: 'doc',
-          id: 'prueba/ejemplo1',
-          label: 'Ejemplo 1',
+          id: 'inspector/elementos',
+          label: 'Elementos',
           customProps: {
-            icon: 'fa:FaCode',
+            icon: 'fa:FaCode', // Código: HTML, DOM
           },
         },
+        {
+          type: 'doc',
+          id: 'inspector/consola',
+          label: 'Consola',
+          customProps: {
+            icon: 'bs:BsFillTerminalFill', // Terminal = consola
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/fuentes',
+          label: 'Fuentes',
+          customProps: {
+            icon: 'fa:FaFont', // Letra = fuentes
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/red',
+          label: 'Red',
+          customProps: {
+            icon: 'fa:FaNetworkWired', // Cable de red
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/rendimiento',
+          label: 'Rendimiento',
+          customProps: {
+            icon: 'fa:FaTachometerAlt', // Velocímetro
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/memoria',
+          label: 'Memoria',
+          customProps: {
+            icon: 'fa:FaMicrochip', // Memoria / chip
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/aplicacion',
+          label: 'Aplicación',
+          customProps: {
+            icon: 'fa:FaCubes', // Aplicaciones o módulos
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/lightHouse',
+          label: 'Light House',
+          customProps: {
+            icon: 'fa:FaLightbulb', // Farol o idea
+          },
+        },
+        {
+          type: 'doc',
+          id: 'inspector/grabadora',
+          label: 'Grabadora',
+          customProps: {
+            icon: 'fa:FaVideo', // Cámara de grabación
+          },
+        }
       ],
     },
   ],
