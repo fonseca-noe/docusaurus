@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Aprende a usar el Inspector de Elementos',
-  tagline: 'Guía visual para entender, explorar y modificar páginas web desde tu navegador.',
+  tagline: 'Guía basica para entender, explorar y modificar páginas web desde tu navegador.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
