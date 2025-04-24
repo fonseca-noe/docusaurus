@@ -29,7 +29,7 @@ const sidebars = {
       label: 'DevTools',
       link: {
         type: 'generated-index',
-          description: '5 minutos para aprender los conceptos más importantes del inspector',
+          description: 'Aprende los conceptos más importantes del inspector',
           slug: '/herramientas-dev', 
       },
       customProps: {

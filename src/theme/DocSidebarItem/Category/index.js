@@ -182,9 +182,9 @@ export default function DocSidebarItemCategory({
           aria-expanded={collapsible && !href ? !collapsed : undefined}
           href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
           {...props}>
-          <span style={{ display: 'flex', alignItems: 'center' }}>
-            {Icon && <Icon style={{ marginRight: 8 }} />}
-            {label}
+          <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            {Icon && <Icon className="sidebar-icon" />}
+            <span>{item.label}</span>
           </span>
         </Link>
         {href && collapsible && (

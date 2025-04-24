@@ -61,8 +61,8 @@ export default function DocSidebarItemLink({
           onClick: onItemClick ? () => onItemClick(item) : undefined,
         })}
         {...props}>
-        <span style={{ display: 'flex', alignItems: 'center' }}>
-          {Icon && <Icon style={{ marginRight: 8 }} />}
+        <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          {Icon && <Icon className="sidebar-icon" />}
           {label}
         </span>
         {!isInternalLink && <IconExternalLink />}
