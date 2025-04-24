@@ -1,0 +1,33 @@
+.toc {
+    position: sticky;
+    top: var(--ifm-navbar-height, 60px);
+    max-height: calc(100vh - var(--ifm-navbar-height, 60px));
+    overflow-y: auto;
+    background-color: var(--ifm-background-surface-color);
+    border-left: 2px solid var(--ifm-color-emphasis-200);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .toc a {
+    color: var(--ifm-link-color);
+    text-decoration: none;
+    display: block;
+    margin: 0.3rem 0;
+    transition: all 0.2s ease;
+  }
+  
+  .toc a:hover {
+    color: var(--ifm-link-hover-color);
+    text-decoration: var(--ifm-link-hover-decoration);
+  }
+  
+  .toc a.active {
+    font-weight: bold;
+    border-left: 3px solid var(--ifm-color-primary);
+    padding-left: 0.5rem;
+  }
+  
