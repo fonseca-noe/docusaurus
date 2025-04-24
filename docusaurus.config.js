@@ -109,6 +109,9 @@ const config = {
               {
                 label: 'DevTools',
                 to: '/docs/intro',
+                customProps: {
+                  icon: 'FaDev',
+                }
               },
             ],
           },
@@ -118,14 +121,23 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                customProps: {
+                  icon: 'FaStackOverflow',
+                }
               },
               {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
+                customProps: {
+                  icon: 'FaDiscord',
+                }
               },
               {
-                label: 'X',
+                label: 'Twitter',
                 href: 'https://x.com/docusaurus',
+                customProps: {
+                  icon: 'FaTwitter',
+                }
               },
             ],
           },
